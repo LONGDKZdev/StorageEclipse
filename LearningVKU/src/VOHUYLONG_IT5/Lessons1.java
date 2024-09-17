@@ -23,6 +23,7 @@ public class Lessons1 {
 ////////import java.util.Scanner;
 //////// trực tiếp :VD double value1 = input.nextdouble();
 //////// gián tiếp 
+	
 	 	Scanner input = new Scanner(System.in);
 	 	
 	 	System.out.print("Enter valueA = ");
