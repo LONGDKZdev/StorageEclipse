@@ -23,7 +23,7 @@ public class Exercise1 {
 	int valueB = 43;
 	
 	
-//	double valueOut =  valueA / valueB; //result = 1.0 ====> FIX : extra (double) before value you use 
+//	double valueOut =  valueA / valueB; //result = 1.0 ====> FIX : extral (double) before value you use 
 //EX:===> double valueOut = (double) valueA / valueB;
 	
 	
@@ -33,10 +33,12 @@ public class Exercise1 {
 	System.out.println(" valueA * valueB = "+(valueA * valueB));
 	System.out.println(" valueA / valueB = "+ valueOut1);
 	
-	
-	
-	
-	
+	System.out.println("                                ");
+	System.out.println("                                ");
+//Bài 3. 
+//Viết chương trình khai báo các biến tương ứng với tất cả kiểu dữ liệu (không gán giá trị).	
+// Nhập giá trị tương ứng cho các biến từ bàn phím và tính tổng, hiệu, tích, thương của biến số rồi in kết quả.
+
 	Scanner input = new Scanner(System.in);
 	
 	System.out.print("Enter value1 = ");
