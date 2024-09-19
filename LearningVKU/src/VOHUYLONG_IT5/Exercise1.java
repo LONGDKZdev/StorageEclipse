@@ -67,4 +67,3 @@ public class Exercise1 {
 
 }
 
-//bài tập 
