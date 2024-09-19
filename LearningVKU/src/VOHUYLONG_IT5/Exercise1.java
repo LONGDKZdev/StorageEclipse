@@ -14,8 +14,12 @@ public class Exercise1 {
 	System.out.println("  *    *    **       *       *  ");
 	System.out.println("   *  *     *  *     *       *  ");
 	System.out.println("    *       *    *   * * * * *  ");
-	System.out.println("                                ");
-	System.out.println("                                ");
+	System.out.println("                                           ");
+	System.out.println("                                           ");
+	System.out.println("-------------------------------------------");
+	System.out.println("-------------------------------------------");
+	System.out.println("                                           ");
+	System.out.println("                                           ");
 	
 ///////////////////////Bài 2:Viết chương trình khai báo các biến và gán (khởi tạo) giá trị cho chúng 
 					//(sử dụng tất các kiểu dữ liệu đã giới thiệu), và tính tổng, hiệu, tích, thương của biến số rồi in kết quả.
@@ -33,8 +37,12 @@ public class Exercise1 {
 	System.out.println(" valueA * valueB = "+(valueA * valueB));
 	System.out.println(" valueA / valueB = "+ valueOut1);
 	
-	System.out.println("                                ");
-	System.out.println("                                ");
+	System.out.println("                                           ");
+	System.out.println("                                           ");
+	System.out.println("-------------------------------------------");
+	System.out.println("-------------------------------------------");
+	System.out.println("                                           ");
+	System.out.println("                                           ");
 //Bài 3. 
 //Viết chương trình khai báo các biến tương ứng với tất cả kiểu dữ liệu (không gán giá trị).	
 // Nhập giá trị tương ứng cho các biến từ bàn phím và tính tổng, hiệu, tích, thương của biến số rồi in kết quả.
