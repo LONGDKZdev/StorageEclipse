@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Lessons1 {
 	
-	public static void main(String[] args) {
-		
+	public static void main(String[] args)
+ {
 //////////////////////////////////////////////////
 	// create an object of Scanner
 	//EX:  Scanner input = new Scanner(System.in);
@@ -18,25 +18,25 @@ public class Lessons1 {
 	double value2 =8.5;
 	System.out.println("value1 = "+value1);
 	System.out.println("valueB = "+value2);
-		
+	
 ////////nhập dữ liệu 
 ////////import java.util.Scanner;
 //////// trực tiếp :VD double value1 = input.nextdouble();
 //////// gián tiếp 
 	
-	 	Scanner input = new Scanner(System.in);
-	 	
-	 	System.out.print("Enter valueA = ");
-	 	int valueA = input.nextInt();
-	 	System.out.println("valueA = "+valueA);
-	 	
-	 	System.out.print("Enter valueB = ");
-	 	int valueB = input.nextInt();
-	 	System.out.println("valueB = "+valueB);
-	 	
+	try(Scanner input = new Scanner(System.in))
+	{
+		System.out.print("Enter valueA = ");
+		int valueA = input.nextInt();
+		System.out.println("valueA = "+valueA);
+		
+		System.out.print("Enter valueB = ");
+		int valueB = input.nextInt();
+		System.out.println("valueB = "+valueB);
+		
 		int tong =valueA + valueB;
 		int hieu =valueA - valueB;
-		int tich =valueA * valueB;
+		   int tich =valueA * valueB;
 		int thuong =valueA / valueB;
 		int chialaydu = valueA % valueB;
 		
@@ -48,5 +48,19 @@ public class Lessons1 {
 		System.out.println("valueA / valueB ="+thuong);
 		System.out.println("valueA % valueB ="+chialaydu);
 		
+	input.close();
+	
+		// public static void Add()
+		// {
+		// System.out.println("valueA + valueB = ");
+		// }
+		// }
+		}
 	}
+
+    public static void Add() 
+		{
+        System.out.println(" print value of valueA + valueB  = ");
+    	}
+	
 }

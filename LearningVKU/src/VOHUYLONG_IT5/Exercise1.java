@@ -7,13 +7,14 @@ public class Exercise1 {
 	public static void main(String[] args) {
 		
 ///////////////////////Bài 1. Viết chương trình khi chạy (run) sẽ in ra chữ VKU
-	System.out.println("                                ");
-	System.out.println("                                ");
-	System.out.println("*        *  *    *   *       *  ");
-	System.out.println(" *      *   *  *     *       *  ");
-	System.out.println("  *    *    **       *       *  ");
-	System.out.println("   *  *     *  *     *       *  ");
-	System.out.println("    *       *    *   * * * * *  ");
+	System.out.println("                                   ");
+	System.out.println("                                   ");
+	System.out.println("  *        *  *    *   *       *   ");
+	System.out.println("   *      *   *  *     *       *   ");
+	System.out.println("    *    *    **       *       *   ");
+	System.out.println("     *  *     *  *     *       *   ");
+	System.out.println("      *       *    *   * * * * *   ");
+	System.out.println("                                   ");
 	System.out.println("                                           ");
 	System.out.println("                                           ");
 	System.out.println("-------------------------------------------");
@@ -27,9 +28,18 @@ public class Exercise1 {
 	int valueB = 43;
 	
 	
+	
+	
+//                             ***Type Case***
+	
 //	double valueOut =  valueA / valueB; //result = 1.0 ====> FIX : extral (double) before value you use 
 //EX:===> double valueOut = (double) valueA / valueB;
+//khi chia thì trả về kết quả có kiểu dữ liệu lớn nhất VD: (long/int=long) hoặc (int/int=int) 
+// kết quả đang là kiểu số nguyên ===> số thực  
+//	doubel ===> float ===> long ===> int ===> short ===> byte
 	
+	
+	///////////         Narroe Type Case
 	
 	double valueOut1 = (double) valueA / valueB;//result = 1.186046511...
 	System.out.println(" valueA + valueB = "+(valueA + valueB));
@@ -47,23 +57,28 @@ public class Exercise1 {
 //Viết chương trình khai báo các biến tương ứng với tất cả kiểu dữ liệu (không gán giá trị).	
 // Nhập giá trị tương ứng cho các biến từ bàn phím và tính tổng, hiệu, tích, thương của biến số rồi in kết quả.
 
-	Scanner input = new Scanner(System.in);
+	try(Scanner input = new Scanner(System.in)){
+		System.out.print("Enter value1 = ");
+		int value1 = input.nextInt();
+		System.out.println("value1 = "+value1);
+		
+		System.out.print("Enter value2 = ");
+		int value2 = input.nextInt();
+		System.out.println("value2 = "+value2);
 	
-	System.out.print("Enter value1 = ");
-	int value1 = input.nextInt();
-	System.out.println("value1 = "+value1);
+		double valueOut2 = (double) value1 / value2;
+		System.out.println(" valueA + valueB = "+(value1 + value2));
+		System.out.println(" valueA - valueB = "+(value1 - value2));
+		System.out.println(" valueA * valueB = "+(value1 * value2));
+		System.out.println(" valueA / valueB = "+ valueOut2);
 	
-	System.out.print("Enter value2 = ");
-	int value2 = input.nextInt();
-	System.out.println("value2 = "+value2);
+		input.close();
+	}
+	
 
-	double valueOut2 = (double) value1 / value2;
-	System.out.println(" valueA + valueB = "+(value1 + value2));
-	System.out.println(" valueA - valueB = "+(value1 - value2));
-	System.out.println(" valueA * valueB = "+(value1 * value2));
-	System.out.println(" valueA / valueB = "+ valueOut2);
-
+	// Lessons1 ex1 = new Lessons1();
+	// ex1.Add();
+	
 	}
 
 }
-
