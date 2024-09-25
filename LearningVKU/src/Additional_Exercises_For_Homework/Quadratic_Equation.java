@@ -46,6 +46,7 @@ public class Quadratic_Equation {
 				System.out.println("phương trình có 2 nghiệm phân biệt ");
 				System.out.printf("value1 = "+" %.3f \n",value3);
 				System.out.printf("value2 = "+" %.3f \n",value4);
+				
 			}
 	valueIn.close();
 	}
