@@ -17,9 +17,10 @@ public class TypeCase {
 		
 ///////////         Narroe Type Case(gán ngược lại)
 		System.out.println("đối với trường hợp ngược lại ");
-		double valueC = 71.2;
-		int valueD = valueC;
-		System.out.println(valueD);
+		// double valueC = 71.2;
+		// int valueD = valueC;
+		// System.out.println(valueD);
+		// không thể ép kiểu từ double qua int 
 		
 	}
 

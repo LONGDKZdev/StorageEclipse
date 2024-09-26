@@ -19,6 +19,5 @@ public class TEST1
 				valueIn.close();
 				// System.out.printf("%.2f",valueIn);  // ====> lấy 2 số thập phân sau dấu phẩy
 			}
-
 		}
 }

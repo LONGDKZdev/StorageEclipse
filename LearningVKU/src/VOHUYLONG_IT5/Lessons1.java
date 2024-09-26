@@ -49,7 +49,7 @@ public class Lessons1 {
 		System.out.println("valueA % valueB ="+chialaydu);
 		
 	input.close();
-	
+	System.out.println("643");
 		// public static void Add()
 		// {
 		// System.out.println("valueA + valueB = ");
