@@ -1,4 +1,4 @@
-package Homework;
+package Homework_24ITB104;
 public class Exercise6_DivisibleFrc5And7 {
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Additional_Exercises_For_Homework;
+package ExerciseForm;
 import java.util.Scanner;
 public class Grades_Table_Java {
 

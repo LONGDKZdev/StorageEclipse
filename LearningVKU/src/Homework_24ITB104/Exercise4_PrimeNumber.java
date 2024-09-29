@@ -1,4 +1,4 @@
-package Homework;
+package Homework_24ITB104;
 public class Exercise4_PrimeNumber 
 {
 

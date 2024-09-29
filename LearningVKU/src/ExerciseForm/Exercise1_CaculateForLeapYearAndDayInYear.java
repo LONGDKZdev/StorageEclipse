@@ -1,8 +1,8 @@
-package Homework_24ITB104;
+package ExerciseForm;
 
 import java.util.Scanner;
 
-public class Exercise1_CaculateForLeapYear {
+public class Exercise1_CaculateForLeapYearAndDayInYear {
 
 	public static void main(String[] args) {
 	Scanner inValue = new Scanner(System.in);
