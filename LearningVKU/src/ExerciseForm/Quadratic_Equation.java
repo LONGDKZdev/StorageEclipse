@@ -29,20 +29,19 @@ public class Quadratic_Equation {
 	///////////////////////////////////////////////////////////////	
 			int B2 = B/2;
 			int delta = (int)Math.pow(B2,2) - A*C;
-			int value1 = 0, value2 = 0;
+			
 			if(delta < 0)
 				System.out.println("vô nghiệm");
 				else if(delta == 0) 
 				{
-					value1 = value2 = (-B/2*A);
+					int value1 ;
+					value1  = (-B / 2*A);
 					System.out.println("phương trình có 2 nghiệm bằng nhau = "+value1); 
 				}
 				else if(delta > 0) 
 				{
-					double value3 = value1;
-					double value4 = value2;
-					value3= (double)(-B-Math.sqrt(delta))/2*A;
-					value4= (double)(-B+Math.sqrt(delta))/2*A;
+					double value3 = (double)(-B-Math.sqrt(delta))/2*A;
+					double value4 = (double)(-B+Math.sqrt(delta))/2*A;
 					System.out.println("phương trình có 2 nghiệm phân biệt ");
 					System.out.printf("value1 = "+" %.3f \n",value3);
 					System.out.printf("value2 = "+" %.3f \n",value4);
