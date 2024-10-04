@@ -1,6 +1,6 @@
-package ExerciseForm;
+package LOOP;
 
-public class Exercise5_MultiplicationTable 
+public class Exercise13_MultiplicationTable 
 {
 
 	public static void main(String[] args) 

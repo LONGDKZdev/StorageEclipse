@@ -1,6 +1,6 @@
-package Additional_Exercises_For_Homework;
+package LOOP;
 
-public class Fibonacci {
+public class Exercise6_Fibonacci {
 
 	public static void main(String[] args) {
 		int F0 =0;

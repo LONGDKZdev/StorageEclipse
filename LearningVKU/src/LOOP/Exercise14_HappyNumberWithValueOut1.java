@@ -1,12 +1,13 @@
-package Additional_Exercises_For_Homework;
+package LOOP;
 import java.util.Scanner;
-public class HappyNumberWithValueOut1 {
+public class Exercise14_HappyNumberWithValueOut1 {
 
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
 		
-		int ValueIn = In.nextInt();
+		//  int ValueIn = In.nextInt();
 
+	In.close();
 	}
 
 }

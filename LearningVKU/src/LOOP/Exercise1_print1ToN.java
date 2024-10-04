@@ -1,6 +1,6 @@
-package Additional_Exercises_For_Homework;
+package LOOP;
 import java.util.Scanner;
-public class print1ToN {
+public class Exercise1_print1ToN {
 
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);

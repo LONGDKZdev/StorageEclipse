@@ -1,6 +1,6 @@
-package Additional_Exercises_For_Homework;
+package LOOP;
 import java.util.Scanner;
-public class Length_Of_Number_String {
+public class Exercise3_Length_Of_Number_String {
 
 	public static void main(String[] args) {
 		int number = 0;
