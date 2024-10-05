@@ -2,7 +2,7 @@ package Exercise_Array;
 
 import java.util.Scanner;
 
-public class Exercise2_2_Dimension_Array {
+public class Exercise_4_Dimension_Array {
 
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
@@ -38,3 +38,5 @@ public class Exercise2_2_Dimension_Array {
 	}
 
 }
+// Có 2 phương thức 
+//Phương thức có trả về và phương thức không trả về 

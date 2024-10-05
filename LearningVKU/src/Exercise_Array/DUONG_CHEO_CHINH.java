@@ -17,21 +17,20 @@ public class DUONG_CHEO_CHINH {
 				arrayIn[a][b] = In.nextInt();
 			}
 		}
+		System.out.println("---------------------------");
+		int a, b;
+		int sum = 0;
+		System.out.println("Print value in diagonal :");
+		for (a = 0; a < x; a++) {
+			for (b = 0; b < a; b++) {
+				System.out.print("   ");
 
-		for (int a = 0; a < x; a++) {
-			for (int b = 0; b < y; b++) {
-				if (a != b) {
-					System.out.print("0");
-				}
-				if (a == b) {
-					System.out.println("1");
-				} else if (a != b) {
-					System.out.print("0");
-				}
 			}
+			System.out.println(arrayIn[a][a]);
+			sum += arrayIn[a][a];
 		}
 
+		System.out.println("Sum value in diagonal = " + sum);
 		In.close();
 	}
-
 }
