@@ -18,7 +18,7 @@ public class Exercise7_converseBase2toBase10 {
 			while (Base2 > 0) {
 				int lastDigit = Base2 % 10;
 
-				decimal = decimal + lastDigit * (int) Math.pow(2, power);
+				decimal += lastDigit * (int) Math.pow(2, power);
 
 				power++;
 
