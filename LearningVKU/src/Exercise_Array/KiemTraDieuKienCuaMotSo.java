@@ -32,7 +32,7 @@ public class KiemTraDieuKienCuaMotSo {
 		}
 	}
 
-/////////////////////////////////////////////////
+//////////////////////////////////////////////////
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
 		System.out.print("Enter number = ");
@@ -40,7 +40,7 @@ public class KiemTraDieuKienCuaMotSo {
 		isEven(n);
 		System.out.println();
 		isPrimeNumber(n);
-
+		System.out.println();
 		In.close();
 	}
 
