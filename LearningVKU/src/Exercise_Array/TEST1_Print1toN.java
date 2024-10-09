@@ -50,6 +50,6 @@ public class TEST1_Print1toN {
 		System.out.println("---------------------------------");
 //    TÍNH GIAI THỪA DÃY SỐ 
 		TongGiaithua(valueIn);
-
+		In.close();
 	}
 }

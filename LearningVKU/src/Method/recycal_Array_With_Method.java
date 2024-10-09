@@ -27,5 +27,6 @@ public class recycal_Array_With_Method {
 		Imput(a, n);
 		Output(a, n);
 
+		In.close();
 	}
 }
