@@ -12,18 +12,20 @@ public class Exercise5_Print_Your_Information {
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
 
-		System.out.println("Enter Informatin(Name, Age, Address, Mail, PhoneNumber) : ");
+		System.out.println("Enter Informatin(1.Name, 2.Age, 3.Address, 4.Mail, 5.PhoneNumber) : ");
 		System.out.print("1. ");
-		String Name = In.next();
+		String Name = In.nextLine();
 		System.out.print("2. ");
 		int Age = In.nextInt();
+		In.nextLine();
 		System.out.print("3. ");
-		String Address = In.next();
+		String Address = In.nextLine();
 		System.out.print("4. ");
-		String Mail = In.next();
+		String Mail = In.nextLine();
 		System.out.print("5. ");
 		int PhoneNumber = In.nextInt();
 
+		System.out.println("---------------------");
 		Information(Name, Age, Address, Mail, PhoneNumber);
 
 		In.close();

@@ -2,7 +2,7 @@ package Exercise_Array;
 
 import java.util.Scanner;
 
-public class Exercise1_Exercise_2_Exercise3_1_Dimension_Array {
+public class Exercise1_Exercise_2_1Dimension_Array {
 
 	public static void main(String[] args) {
 
