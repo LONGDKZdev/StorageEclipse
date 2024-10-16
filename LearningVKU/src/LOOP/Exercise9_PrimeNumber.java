@@ -47,7 +47,6 @@ public class Exercise9_PrimeNumber {
 					divisorCount++;
 				}
 			}
-
 			if (divisorCount == 2) {
 				System.out.print(i + " ");
 			}
