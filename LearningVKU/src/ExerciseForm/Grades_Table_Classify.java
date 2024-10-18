@@ -10,18 +10,18 @@ public class Grades_Table_Classify {
                 System.out.println("1 grade lever 2  (gradeC)");
                 System.out.println("1 grade lever 3  (gradeD)");
                 System.out.println("-----------------------------");
-                double gradeA, gradeB, gradeC, gradeD;
+                int gradeA, gradeB, gradeC, gradeD;
                 System.out.println("***grade lever 1***");
                 System.out.print("Enter gradeA = ");
-                gradeA = inValue.nextDouble();
+                gradeA = inValue.nextInt();
                 System.out.print("Enter gradeB = ");
-                gradeB = inValue.nextDouble();
+                gradeB = inValue.nextInt();
                 System.out.println("***grade lever 2***");
                 System.out.print("Enter gradeC = ");
-                gradeC = inValue.nextDouble();
+                gradeC = inValue.nextInt();
                 System.out.println("***grade lever 3***");
                 System.out.print("Enter gradeD = ");
-                gradeD = inValue.nextDouble();
+                gradeD = inValue.nextInt();
                 System.out.println("-----------------------------");
                 while(gradeA < 0 || gradeA > 10)
                 {
@@ -30,7 +30,7 @@ public class Grades_Table_Classify {
                     System.out.println("*******************");
                     System.out.println("***grade lever 1***");
                     System.out.print("Enter gradeA again = ");
-                    gradeA = inValue.nextDouble();
+                    gradeA = inValue.nextInt();
                 }
                 while (gradeB < 0 || gradeB > 10)
                 {
@@ -38,7 +38,7 @@ public class Grades_Table_Classify {
                     System.out.println("Error! enter again!");
                     System.out.println("*******************");
                     System.out.print("Enter gradeB again = ");
-                    gradeB = inValue.nextDouble();
+                    gradeB = inValue.nextInt();
                 }
                 while (gradeC < 0 || gradeC > 10)
                 {
@@ -47,7 +47,7 @@ public class Grades_Table_Classify {
                     System.out.println("*******************");
                     System.out.println("***grade lever 2***");
                     System.out.print("Enter gradeC again = ");
-                    gradeC = inValue.nextDouble();
+                    gradeC = inValue.nextInt();
                 }
                 while (gradeD < 0 || gradeD > 10)
                 {
@@ -56,11 +56,11 @@ public class Grades_Table_Classify {
                     System.out.println("*******************");
                     System.out.println("***grade lever 3***");
                     System.out.print("Enter gradeD again = ");
-                    gradeD = inValue.nextDouble();
+                    gradeD = inValue.nextInt();
                 }
                 gradeC *=2;
                 gradeD *=3;
-                double gradeOut = (gradeA + gradeB + gradeC + gradeD)/7;
+                int gradeOut = (gradeA + gradeB + gradeC + gradeD)/7;
                 System.out.printf("Your score  = %.3f \n",gradeOut);
                 String X =((gradeOut >= 8.5 )?" Your letter grade:  A ": (gradeOut >= 7 && gradeOut < 8.5)?" Your letter grade: B ":(gradeOut < 7 && gradeOut >= 5.5)?" Your letter grade: C ":(gradeOut < 5.5 && gradeOut >= 4.5)?" Your letter grade: D ":" Your letter grade: F ");
                 System.out.println("----------------------------");

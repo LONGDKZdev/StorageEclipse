@@ -32,8 +32,8 @@ public class Exercise1 {
 	
 //                             ***Type Case***
 	
-//	double valueOut =  valueA / valueB; //result = 1.0 ====> FIX : extral (double) before value you use 
-//EX:===> double valueOut = (double) valueA / valueB;
+//	int valueOut =  valueA / valueB; //result = 1.0 ====> FIX : extral (int) before value you use 
+//EX:===> int valueOut = (int) valueA / valueB;
 //khi chia thì trả về kết quả có kiểu dữ liệu lớn nhất VD: (long/int=long) hoặc (int/int=int) 
 // kết quả đang là kiểu số nguyên ===> số thực  
 //	doubel ===> float ===> long ===> int ===> short ===> byte
@@ -41,7 +41,7 @@ public class Exercise1 {
 	
 	///////////         Narroe Type Case
 	
-	double valueOut1 = (double) valueA / valueB;//result = 1.186046511...
+	int valueOut1 = (int) valueA / valueB;//result = 1.186046511...
 	System.out.println(" valueA + valueB = "+(valueA + valueB));
 	System.out.println(" valueA - valueB = "+(valueA - valueB));
 	System.out.println(" valueA * valueB = "+(valueA * valueB));
@@ -66,7 +66,7 @@ public class Exercise1 {
 		int value2 = input.nextInt();
 		System.out.println("value2 = "+value2);
 	
-		double valueOut2 = (double) value1 / value2;
+		int valueOut2 = (int) value1 / value2;
 		System.out.println(" valueA + valueB = "+(value1 + value2));
 		System.out.println(" valueA - valueB = "+(value1 - value2));
 		System.out.println(" valueA * valueB = "+(value1 * value2));

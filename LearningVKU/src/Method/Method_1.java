@@ -33,7 +33,7 @@ public class Method_1 {
 		return a + b + c;
 	}
 
-	public static double Sum(double a, double b) {
+	public static int Sum(int a, int b) {
 		System.out.println("Sum 3");
 		return a + b;
 	}

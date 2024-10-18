@@ -2,9 +2,9 @@ package Exercise_Array;
 
 import java.util.Scanner;
 
-public class TEST1_Print1toN {
+public class TEST1_print1toN {
 
-	public static void PrintValue(int n) {
+	public static void printValue(int n) {
 		/////////////////////////////////
 		int sum = 0;
 		for (int i = 0; i <= n; i++) {
@@ -45,7 +45,7 @@ public class TEST1_Print1toN {
 		Scanner In = new Scanner(System.in);
 		System.out.print("Enter limit value = ");
 		int valueIn = In.nextInt();
-		PrintValue(valueIn);
+		printValue(valueIn);
 		System.out.println();
 		System.out.println("---------------------------------");
 //    TÍNH GIAI THỪA DÃY SỐ 

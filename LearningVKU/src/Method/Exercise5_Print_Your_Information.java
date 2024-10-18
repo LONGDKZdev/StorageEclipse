@@ -2,7 +2,7 @@ package Method;
 
 import java.util.Scanner;
 
-public class Exercise5_Print_Your_Information {
+public class Exercise5_print_Your_Information {
 
 	public static void Information(String Name, int Age, String Address, String Mail, int PhoneNumber) {
 		System.out.println("Name: " + Name + "\n" + "Age: " + Age + "\n" + "Address: " + Address + "\n" + "Mail: "

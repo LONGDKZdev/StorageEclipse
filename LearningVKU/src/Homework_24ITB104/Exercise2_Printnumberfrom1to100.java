@@ -1,6 +1,6 @@
 package Homework_24ITB104;
 
-public class Exercise2_Printnumberfrom1to100 {
+public class Exercise2_printnumberfrom1to100 {
 
 	public static void main(String[] args) {
 	

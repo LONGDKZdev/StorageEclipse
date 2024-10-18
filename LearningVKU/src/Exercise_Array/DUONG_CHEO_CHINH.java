@@ -20,7 +20,7 @@ public class DUONG_CHEO_CHINH {
 		System.out.println("---------------------------");
 		int a, b;
 		int sum = 0;
-		System.out.println("Print value in diagonal :");
+		System.out.println("print value in diagonal :");
 		for (a = 0; a < x; a++) {
 			for (b = 0; b < a; b++) {
 				System.out.print("   ");

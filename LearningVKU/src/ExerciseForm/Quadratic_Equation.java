@@ -40,8 +40,8 @@ public class Quadratic_Equation {
 				}
 				else if(delta > 0) 
 				{
-					double value3 = (double)(-B-Math.sqrt(delta))/2*A;
-					double value4 = (double)(-B+Math.sqrt(delta))/2*A;
+					int value3 = (int)(-B-Math.sqrt(delta))/2*A;
+					int value4 = (int)(-B+Math.sqrt(delta))/2*A;
 					System.out.println("phương trình có 2 nghiệm phân biệt ");
 					System.out.printf("value1 = "+" %.3f \n",value3);
 					System.out.printf("value2 = "+" %.3f \n",value4);

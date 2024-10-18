@@ -23,10 +23,10 @@ package programing;
 	        float myFloat = input.nextFloat();
 	        System.out.println("Float entered: " + myFloat);
 
-	        // Getting double input
-	        System.out.print("Enter double: ");
-	        double myDouble = input.nextDouble();
-	        System.out.println("Double entered: " + myDouble);
+	        // Getting int input
+	        System.out.print("Enter int: ");
+	        int myint = input.nextInt();
+	        System.out.println("int entered: " + myint);
 
 	        // Getting String input
 	        System.out.print("Enter text: ");
@@ -61,10 +61,10 @@ package programing;
 //		    System.out.print("Enter float: ");
 //		    float myFloat = input.nextFloat();
 //		    System.out.println("Float entered = " + myFloat);
-//		    // Getting double input
-//		    System.out.print("Enter double: ");
-//		    double myDouble = input.nextDouble();
-//		    System.out.println("Double entered = " + myDouble);
+//		    // Getting int input
+//		    System.out.print("Enter int: ");
+//		    int myint = input.nextInt();
+//		    System.out.println("int entered = " + myint);
 //		    // Getting String input
 //		    System.out.print("Enter text: ");
 //		    String myString = input.next();
