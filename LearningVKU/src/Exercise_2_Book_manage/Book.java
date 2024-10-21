@@ -1,6 +1,7 @@
 package Exercise_2_Book_manage;
 import java.util.*;
 public class Book {
+	
 	private int ID;
 	private String name;
 	private double price;
@@ -48,13 +49,14 @@ public class Book {
 	    Scanner In = new Scanner(System.in);
 	    System.out.print("Nhập mã sách: ");
 	    ID = In.nextInt();
-	    In.nextLine(); // Clear the buffer
+	    In.nextLine();
 	    System.out.print("Nhập tên sách: ");
 	    name = In.nextLine();
 	    System.out.print("Nhập giá sách: ");
 	    price = In.nextDouble();
 	    System.out.print("Nhập số lượng: ");
 	    quantity = In.nextInt();
+
 	}
 
 }

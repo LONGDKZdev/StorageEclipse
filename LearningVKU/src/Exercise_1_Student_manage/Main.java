@@ -7,7 +7,8 @@ public class Main {
 		a.input();
 
 		System.out.println(a.toString());
-		System.out.print("Tổng điểm : " + a.tongdiem());
+		System.out.print("Tổng điểm : " + a.tongdiem()+"\n");
+		System.out.println("----------------------");
 		if(a.ketqua() == true) {
 			System.out.println("Bạn đã đậu đại học !");
 		}

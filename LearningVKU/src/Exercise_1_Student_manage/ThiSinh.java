@@ -1,20 +1,20 @@
 package Exercise_1_Student_manage;
 import java.util.Scanner;
 public class ThiSinh {
-	private static int ID;
-	private static String name;
-	private static double toan;
-	private static double ly;
-	private static double hoa;
+	private  String ID;
+	private  String name;
+	private  double toan;
+	private  double ly;
+	private  double hoa;
 	
 	public ThiSinh() {
-		ID = 0;
+//		ID = 0;
 		name= " ";
 		toan = 0.0;
 		ly = 0.0;
 		hoa = 0.0;
 	}
-	public ThiSinh(int ID, String name, double toan, double ly, double hoa) {
+	public ThiSinh(String ID, String name, double toan, double ly, double hoa) {
 		this.ID =ID;
 		this.name =name;
 		this.toan =toan;
@@ -22,12 +22,12 @@ public class ThiSinh {
 		this.hoa =hoa;
 	}
 	
-	public int getID() {
+	public String getID() {
 		return ID;
 	}
 
 
-	public void setID(int iD) {
+	public void setID(String iD) {
 		this.ID = iD;
 	}
 
@@ -84,8 +84,7 @@ public class ThiSinh {
 		Scanner In =new Scanner (System.in);
 		
 		System.out.print("Nhập ID : ");
-		ID = In.nextInt();
-		In.nextLine();// đọc hết dòng 
+		ID = In.nextLine();// đọc hết dòng 
 		System.out.print("Nhập tên : ");
 		name = In.nextLine();
 		System.out.print("Nhập điểm toán : ");
@@ -94,6 +93,7 @@ public class ThiSinh {
 		ly = In.nextInt();
 		System.out.print("Nhập điểm hóa : ");
 		hoa = In.nextInt();
+		System.out.println("----------------------");
 	}
 	
 	public double tongdiem() {
