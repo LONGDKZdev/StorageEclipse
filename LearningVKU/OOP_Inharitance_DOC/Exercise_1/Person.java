@@ -5,6 +5,16 @@ public class Person {
 	private String Name;
 	private int Age;
 	
+	public Person() {
+		
+	}
+	
+	public Person(String ID, String Name, int Age) {
+		super();
+		this.ID = ID;
+		this.Name = Name;
+		this.Age = Age;
+	}
 
 	public String getID() {
 		return ID;
@@ -40,22 +50,13 @@ public class Person {
 		Age = In.nextInt();
 	}
 	
-	
 	public void displayInfo() {
+		System.out.println("-------------------");
 		System.out.print("ID : " + ID);
-		System.out.print("Name : " + Name);
-		System.out.print("Age : " + Age);
+		System.out.print("\nName : " + Name);
+		System.out.print("\nAge : " + Age);
 	}
-	public class Student extends Person {
-		private double gpa;
-		
-		@Override
-		public void input() {
-			super.input();
-			Scanner In =new Scanner(System.in);
-			gpa = In.nextDouble();
-		}
-	}
+	
 }
 
 	

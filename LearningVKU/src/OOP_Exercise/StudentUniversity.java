@@ -6,7 +6,7 @@ public class student{
 
 	 private int ID;
 	 private String Name;
-	 private int Age;
+	 public int Age;
 	 
 	 public student(int ID, String Name, int Age) {
          this.ID = ID;// thêm this để phân biệt thuộc tính hay giá trị 
