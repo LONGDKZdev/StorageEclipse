@@ -3,11 +3,12 @@ import java.util.Scanner;
 public class EBook extends Book{
 	private String format;
 	private double fileSizeMB;
+	
 	public EBook() {
 		super();
 		
 	}
-	public EBook(int id, String title, String author, long price) {
+	public EBook(int id, String title, String author, long price,String format,double fileSizeMB) {
 		super(id, title, author, price);
 		this.format = format;
 		this.fileSizeMB = fileSizeMB;
@@ -34,9 +35,9 @@ public class EBook extends Book{
 	public void input() {
 		Scanner In =new Scanner(System.in);
 		super.input();
-		System.out.println("Enter format :");
+		System.out.print("Enter format :");
 		format = In.nextLine();
-		System.out.println("Enter File Size MB :");
+		System.out.print("Enter File Size MB :");
 		fileSizeMB = In.nextDouble();
 	}
 	

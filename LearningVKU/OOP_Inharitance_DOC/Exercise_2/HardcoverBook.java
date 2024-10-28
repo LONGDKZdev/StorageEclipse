@@ -7,15 +7,11 @@ public class HardcoverBook extends Book {
 		super();
 	}
 
-	public HardcoverBook(int id, String title, String author, long price) {
+	public HardcoverBook(int id, String title, String author, long price,int numberOfPages) {
 		super(id, title, author, price);
-	}
-
-	public HardcoverBook(int numberOfPages) {
-		super();
 		this.numberOfPages = numberOfPages;
 	}
-	
+
 	public String toString() {
 		return super.toString()
 				+"\nNumber Of Pages : "+ numberOfPages;	

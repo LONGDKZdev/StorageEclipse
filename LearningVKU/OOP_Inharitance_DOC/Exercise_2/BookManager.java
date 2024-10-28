@@ -63,4 +63,30 @@ public class BookManager {
 		return null;
 	}
 	
+	public void displayBook() {
+		for(int i =0; i < size; i++) {
+			System.out.println(books[i].toString());
+			System.out.println("------------------------------");
+		}
+	}
+	
+	public long totalPrice() {
+		long totalPrice = 0;
+		for(int i =0; i < size; i++) {
+			totalPrice += books[i].getPrice();
+		}
+		return totalPrice;
+	}
+	public double getTotalFileSize() {
+		double total =0;
+		for(int i =0; i < size; i++) {
+			if(books[i] instanceof EBook) {
+				//Ép kiểu về kiểu EBOOK
+				total += ((EBook)books[i]).getFileSizeMB();
+			}
+		}
+		return total;
+	}
+	
+	
 }
