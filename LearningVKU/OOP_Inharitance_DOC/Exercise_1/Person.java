@@ -1,60 +1,64 @@
 package Exercise_1;
 import java.util.Scanner;
 public class Person {
-	private String ID;
-	private String Name;
-	private int Age;
+	private String id;
+	private String name;
+	private int age;
 	
 	public Person() {
 		
 	}
 	
-	public Person(String ID, String Name, int Age) {
+	public Person(String ID, String Name, int age) {
 		super();
-		this.ID = ID;
-		this.Name = Name;
-		this.Age = Age;
+		this.id = id;
+		this.name = name;
+		this.age = age;
 	}
 
-	public String getID() {
-		return ID;
+	
+	
+	
+
+	public String getId() {
+		return id;
 	}
 
-	public void setID(String iD) {
-		ID = iD;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public int getAge() {
-		return Age;
+		return age;
 	}
 
 	public void setAge(int age) {
-		Age = age;
+		this.age = age;
 	}
 
 	public void input() {
 		Scanner In =new Scanner(System.in);
 		System.out.print("Enter ID: ");
-		ID = In.nextLine();
+		id = In.nextLine();
 		System.out.print("Enter Name: ");
-		Name = In.nextLine();
+		name = In.nextLine();
 		System.out.print("Enter Age: ");
-		Age = In.nextInt();
+		age = In.nextInt();
+		System.out.println("--------------");
 	}
 	
 	public void displayInfo() {
-		System.out.println("-------------------");
-		System.out.print("ID : " + ID);
-		System.out.print("\nName : " + Name);
-		System.out.print("\nAge : " + Age);
+		System.out.print("ID : " + id);
+		System.out.print("\nName : " + name);
+		System.out.print("\nAge : " + age);
 	}
 	
 }
