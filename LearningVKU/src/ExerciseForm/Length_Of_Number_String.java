@@ -18,7 +18,7 @@ public class Length_Of_Number_String {
 				number++;
 				length /= 10 ;
 			}	
-		System.out.println("Length of number string = "+number);
+		System.out.println("Length of number String = "+number);
 	In.close();
 	}
 

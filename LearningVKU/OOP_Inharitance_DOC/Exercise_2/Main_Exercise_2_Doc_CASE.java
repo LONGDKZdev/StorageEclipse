@@ -5,11 +5,11 @@ public class Main_Exercise_2_Doc_CASE {
 
 	HardcoverBook hbook = new HardcoverBook (4, "Sach cung", "Dinh", 10, 250);
 
-	EBook ebook = new EBook (5, "Sach PDF", "Duong", 20, ".pdf", 300.0);
+	EBook ebook = new EBook (5, "Sach PDF", "Duong", 20, ".pdf", 300.0)
 
 	book = hbook;
 
-	HardcoverBook ketqua = new HardcoverBook();
+	HardcoverBook ketqua = new HardcoverBook()
 
 	if(book instanceof HardcoverBook) {
 

@@ -4,7 +4,7 @@ public class Exercise1_print1ToN {
 
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
-		System.out.print("Enter the length string =");
+		System.out.print("Enter the length String =");
 		int valueIn = In.nextInt();
 		System.out.println("");
 		if(valueIn < 1 ) {
@@ -15,7 +15,7 @@ public class Exercise1_print1ToN {
 				}
 			}
 		else {
-				System.out.println("lenth of string = "+valueIn);
+				System.out.println("lenth of String = "+valueIn);
 				System.out.println("");
 				for(int value=1; value < valueIn;value++) {
 				System.out.print(value+",");

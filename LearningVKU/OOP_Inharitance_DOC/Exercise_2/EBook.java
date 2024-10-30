@@ -26,7 +26,6 @@ public class EBook extends Book{
 	public void setFileSizeMB(double fileSizeMB) {
 		this.fileSizeMB = fileSizeMB;
 	}
-	@Override
 	public String toString() {
 		return super.toString()
 		+ "\nformat: "+format

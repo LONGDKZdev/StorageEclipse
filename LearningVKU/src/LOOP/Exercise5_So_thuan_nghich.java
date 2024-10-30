@@ -7,7 +7,7 @@ public class Exercise5_So_thuan_nghich {
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
 
-		System.out.print("Enter string number : ");
+		System.out.print("Enter String number : ");
 		int StringIn = In.nextInt();
 		int StringOut = 0;
 //////////////////////////////////////////////////////
