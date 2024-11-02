@@ -1,9 +1,9 @@
 package OOP_Exercise;
 import java.util.Scanner;
 public class Teacher {
-	private int ID;
-	private String Name;
-	private int Age;
+	protected int ID;
+	protected String Name;
+	protected int Age;
 	
 
 	public void Teaching() {

@@ -1,9 +1,9 @@
 package Exercise_1;
 import java.util.Scanner;
 public class Person {
-	private String id;
-	private String name;
-	private int age;
+	protected String id;
+	protected String name;
+	protected int age;
 	
 	public Person() {
 		
@@ -15,10 +15,6 @@ public class Person {
 		this.name = name;
 		this.age = age;
 	}
-
-	
-	
-	
 
 	public String getId() {
 		return id;

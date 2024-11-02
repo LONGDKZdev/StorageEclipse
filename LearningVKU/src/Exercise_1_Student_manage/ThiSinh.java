@@ -1,11 +1,11 @@
 package Exercise_1_Student_manage;
 import java.util.Scanner;
 public class ThiSinh {
-	private  String ID;
-	private  String name;
-	private  double toan;
-	private  double ly;
-	private  double hoa;
+	protected  String ID;
+	protected  String name;
+	protected  double toan;
+	protected  double ly;
+	protected  double hoa;
 	
 	public ThiSinh() {
 //		ID = 0;

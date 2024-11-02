@@ -4,8 +4,8 @@ public class StudentUniversity {
 	
 public class student{
 
-	 private int ID;
-	 private String Name;
+	 protected int ID;
+	 protected String Name;
 	 public int Age;
 	 
 	 public student(int ID, String Name, int Age) {
@@ -14,7 +14,7 @@ public class student{
          this.Age = Age;
      }
 	
-	private void output(){
+	protected void output(){
 		System.out.println(" Studen ID : "+ ID);
 		System.out.println(" Name : " + Name );
 		System.out.println(" Age : "+ Age );

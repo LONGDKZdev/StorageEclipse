@@ -3,7 +3,7 @@ package package1;
 import java.util.Scanner;
 
 public class SolveSUDOKU{
-    private int[][] board = new int[9][9];
+    protected int[][] board = new int[9][9];
 
     // Hàm khởi tạo, khởi tạo tất cả các giá trị trong bảng là 0
     public SolveSUDOKU(){

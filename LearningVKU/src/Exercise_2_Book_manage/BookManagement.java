@@ -1,7 +1,7 @@
 package Exercise_2_Book_manage;
 import java.util.Scanner;
 public class BookManagement {
-	private Book[] books;//khai báo
+	protected Book[] books;//khai báo
 		
 	public BookManagement() {
 		int n = inputLengthBooks();

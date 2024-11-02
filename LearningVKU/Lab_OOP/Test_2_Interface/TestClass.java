@@ -1,6 +1,4 @@
 package Test_2_Interface;
-
-//Java program to demonstrate working of
 //interface
 
 import java.io.*;

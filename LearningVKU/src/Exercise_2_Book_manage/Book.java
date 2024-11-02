@@ -2,10 +2,10 @@ package Exercise_2_Book_manage;
 import java.util.*;
 public class Book {
 	
-	private int ID;
-	private String name;
-	private double price;
-	private int quantity;
+	protected int ID;
+	protected String name;
+	protected double price;
+	protected int quantity;
 	
 	
 	public Book() {
