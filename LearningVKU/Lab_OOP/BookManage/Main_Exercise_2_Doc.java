@@ -73,46 +73,7 @@ public static void main(String[] args) {
 		}
 	
 	}
+// Note
 }
-/*
-BookManager books = new BookManager();
 
-//Book book1 = new Book(1,"Java","Nguyễn Thanh", 100);
-//Book book2 = new Book(2,"C++","Đổ Công Đức", 150);
-//Book book3 = new Book(3,"Database"," Lê Văn Minh", 50);
-//	
-//HardcoverBook hbook1 = new HardcoverBook(4, "Sách cứng", "Đính", 10, 250);
-//
-//books.addBook(book1);
-//books.addBook(book2);
-//books.addBook(book3);
-//books.addBook(hbook1);
-// ép kiểu int = (int) long
-
-HardcoverBook hbook1 = new HardcoverBook(1, "Java", "Dinh", 10, 250);
-HardcoverBook hbook2 = new HardcoverBook(2, "C++", "Duong", 20, 300);
-
-EBook ebook1 = new EBook(3, "DataBase", "Minh", 15, "pdf", 250);
-EBook ebook2 = new EBook(4, "Giai tich", "Thinh", 15, "dox", 20);
-
-//Thêm sách vào
-books.addBook(hbook1);
-books.addBook(hbook2);
-books.addBook(ebook1);
-books.addBook(ebook2);
-
-System.out.println("Total price: "+ books.totalPrice());
-
-System.out.println("Total file size: "+ books.getTotalFileSize());
-
-
-
-//if( kqBook != null) {
-//	System.out.println(kqBook.toString());
-//}
-//else {
-//	System.out.print("Không tìm thấy !");
-//}
-
-*/
 
