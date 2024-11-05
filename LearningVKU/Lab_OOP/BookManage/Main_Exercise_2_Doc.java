@@ -73,9 +73,6 @@ public static void main(String[] args) {
 		}
 	
 	}
-// Note
-//612
-//23
 }
 
 
