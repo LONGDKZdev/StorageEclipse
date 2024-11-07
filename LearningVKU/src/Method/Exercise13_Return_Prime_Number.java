@@ -6,11 +6,13 @@ public class Exercise13_Return_Prime_Number {
 
 	public static boolean isPrimeNumber(int valueIn) {
 		// Math.sqrt(valueIn) chỉ kiểm tra 1 nữa của valueIn
-		if (valueIn < 2)
+		if (valueIn < 2) {
 			return false;
+		}
 		for (int i = 2; i < Math.sqrt(valueIn); i++) {
-			if (valueIn % i == 0)
+			if (valueIn % i == 0) {
 				return false;
+			}
 		}
 		return true;
 	}

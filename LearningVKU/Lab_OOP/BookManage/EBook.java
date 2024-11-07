@@ -1,5 +1,5 @@
 package BookManage;
-import java.util.*;
+import java.util.Scanner;
 public class EBook extends Book implements Digital{
 	protected String format;
 	protected double fileSizeMB;
@@ -11,8 +11,11 @@ public class EBook extends Book implements Digital{
 
 	@Override
 	public boolean isBigBook() {
-		if(fileSizeMB >= 200 )return true;
-		else return false;
+		if(fileSizeMB >= 200 ) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public EBook() {
@@ -40,17 +43,15 @@ public class EBook extends Book implements Digital{
 	public void setFileSizeMB(double fileSizeMB) {
 		this.fileSizeMB = fileSizeMB;
 	}
-
-	@Override
-	public String toString() {
-		return "ID : " + super.id
-				+"\nTitle : " + super.title
-				+"\nAuthor : " + super.author
-				+"\nPrice : " + super.price
-				+"\nFormat : "+ format
-				+"\nFile size  : "+	fileSizeMB;
-	}
-
+		@Override
+		public String toString() {
+			return "ID : " + super.id
+					+"\nTitle : " + super.title
+					+"\nAuthor : " + super.author
+					+"\nPrice : " + super.price
+					+"\nFormat : "+ format
+					+"\nFile size  : "+	fileSizeMB;
+		}
 	@Override
 	public void input() {
 		Scanner In = new Scanner(System.in);
@@ -69,21 +70,21 @@ public class EBook extends Book implements Digital{
 		format =In.nextLine();
 		System.out.print("Enter File  Size MB : ");
 		fileSizeMB =In.nextDouble();
-		
-	}
-	
 
-	
-//	
+	}
+}
+
+
+//
 //	public EBook() {
 //		super();
-//		
+//
 //	}
 //	public EBook(int id, String title, String author, long price,String format,double fileSizeMB) {
 //		super(id, title, author, price);
 //		this.format = format;
 //		this.fileSizeMB = fileSizeMB;
-//		
+//
 //	}
 //	public String getFormat() {
 //		return format;
@@ -110,17 +111,17 @@ public class EBook extends Book implements Digital{
 //		System.out.print("Enter File Size MB :");
 //		fileSizeMB = In.nextDouble();
 //	}
-//	
+//
 //	public boolean isBigBook() {
 //		if(fileSizeMB >= 200) return true;
 //		 return false;
-	
-	
-	
-	
-		
 
 
-		
-	
-}
+
+
+
+
+
+
+
+

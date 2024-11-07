@@ -3,8 +3,8 @@ package Test_1_Abstrct;
 //Abstract class
 abstract class Sunstar {
 	int a;
-	
-	
+
+
   Sunstar() {
 		System.out.println("");
 	}
@@ -14,7 +14,8 @@ abstract void printInfo1();
 
 //Abstraction performed using extends
 class Employee extends Sunstar {
- void printInfo1()
+ @Override
+void printInfo1()
  {
      String name = "avinash";
      int age = 21;
@@ -25,7 +26,8 @@ class Employee extends Sunstar {
      System.out.println(salary);
      System.out.println("==================");
  }
- void printInfo2()
+ @Override
+void printInfo2()
  {
      String name = "ADANFHJ";
      int age = 20;
@@ -36,11 +38,11 @@ class Employee extends Sunstar {
      System.out.println(salary);
      System.out.println("==================");
  }
- 
+
  class three extends Employee {
-	 
+
  }
- 
+
 }
 
 class Base {

@@ -80,7 +80,7 @@ public class SolveSUDOKU{
     // Hàm khởi tạo bảng Sudoku từ người dùng
     public void inputBoard() {
         Scanner scanner = new Scanner(System.in);
-        
+
     scanner.close();
     }
 

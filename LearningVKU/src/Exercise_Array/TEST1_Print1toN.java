@@ -8,9 +8,9 @@ public class TEST1_print1toN {
 		/////////////////////////////////
 		int sum = 0;
 		for (int i = 0; i <= n; i++) {
-			if (i < n)
+			if (i < n) {
 				System.out.print(i + ",");
-			else if (i == n) {
+			} else if (i == n) {
 				System.out.print(i);
 			}
 			sum = sum + i;
@@ -25,9 +25,9 @@ public class TEST1_print1toN {
 		int TongGiaithua = 0;
 		for (int a = 1; a <= n; a++) // Tính giai thừa
 		{
-			if (a < n)
+			if (a < n) {
 				System.out.print(a + ",");
-			else if (a == n) {
+			} else if (a == n) {
 				System.out.print(a);
 			}
 			Giaithua = Giaithua * a;
@@ -48,7 +48,7 @@ public class TEST1_print1toN {
 		printValue(valueIn);
 		System.out.println();
 		System.out.println("---------------------------------");
-//    TÍNH GIAI THỪA DÃY SỐ 
+//    TÍNH GIAI THỪA DÃY SỐ
 		TongGiaithua(valueIn);
 		In.close();
 	}

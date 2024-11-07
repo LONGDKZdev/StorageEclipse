@@ -38,5 +38,5 @@ public class Exercise_3_2Dimension_Array {
 	}
 
 }
-// Có 2 phương thức 
-//Phương thức có trả về và phương thức không trả về 
+// Có 2 phương thức
+//Phương thức có trả về và phương thức không trả về

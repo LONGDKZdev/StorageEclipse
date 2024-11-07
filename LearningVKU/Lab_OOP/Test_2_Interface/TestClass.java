@@ -1,8 +1,6 @@
 package Test_2_Interface;
 //interface
 
-import java.io.*;
-
 //A simple interface
 interface In1 {
 
@@ -18,8 +16,9 @@ class TestClass implements In1 {
 
  // Implementing the capabilities of
  // interface.
- public void display(){ 
-   System.out.println("Geek"); 
+ @Override
+public void display(){
+   System.out.println("Geek");
  }
 
 
@@ -28,9 +27,9 @@ class TestClass implements In1 {
  {
      TestClass t = new TestClass();
      t.display();
-     System.out.println(t.a);
+     System.out.println(In1.a);
  }
- 
+
 }
 
 

@@ -1,18 +1,18 @@
 package Exercise_2_Book_manage;
-import java.util.*;
+import java.util.Scanner;
 public class Book {
-	
+
 	protected int ID;
 	protected String name;
 	protected double price;
 	protected int quantity;
-	
-	
+
+
 	public Book() {
 		name = " ";
 	}
-	
-	
+
+
 	public int getID() {
 		return ID;
 	}
@@ -37,7 +37,7 @@ public class Book {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Mã sách: " + ID

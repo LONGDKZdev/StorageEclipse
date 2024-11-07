@@ -12,7 +12,7 @@ public class HardcoverBook extends Book {
 		this.numberOfPages = numberOfPages;
 	}
 
-	
+
 	public int getNumberOfPages() {
 		return numberOfPages;
 	}
@@ -24,10 +24,10 @@ public class HardcoverBook extends Book {
 	@Override
 	public String toString() {
 		return "ID : " + super.id
-		+"\nTitle : " + super.title
-		+"\nAuthor : " + super.author
-		+"\nPrice : " + super.price
-		+"\nNumber Of Pages : "+ numberOfPages;
+				+"\nTitle : " + super.title
+				+"\nAuthor : " + super.author
+				+"\nPrice : " + super.price
+				+"\nNumber Of Pages : "+ numberOfPages;
 	}
 
 	@Override
@@ -45,8 +45,8 @@ public class HardcoverBook extends Book {
 		super.price =In.nextLong();
 		System.out.print("Enter Number Of Pages :");
 		numberOfPages = In.nextInt();
-		
+
 	}
-	
+
 }
 

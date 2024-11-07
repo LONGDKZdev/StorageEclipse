@@ -1,12 +1,12 @@
 package BookManage;
-import java.util.*;
+import java.util.Scanner;
 public class Main_Exercise_2_Doc {
 
 public static void main(String[] args) {
-	BookManager books = new BookManager();
+	BookManage books = new BookManage();
 
 	boolean ok =true;
-	
+
 	while(ok) {
 		System.out.println("=================MENU======================");
 		System.out.println("|1. Thêm sách                             |");
@@ -16,16 +16,16 @@ public static void main(String[] args) {
 		System.out.println("|5 In ra tổng kích thước file của ebook   |");
 		System.out.println("|6. Thoát chương trình !                  |");
 		System.out.println(" ==========================================");
-		
+
 		Scanner In = new Scanner (System.in);
 		System.out.print("Enter your choice : ");
 		int choice = In.nextInt();
-		
+
 		switch(choice) {
 		case 1:
 			System.out.println("-------------------------");
 			System.out.println("|1. Add hard cover book |");
-			System.out.println("|2. Add Ebook 			|");
+			System.out.println("|2. Add Ebook 		|");
 			System.out.println("-------------------------");
 			System.out.print("Enter your choice: ");
 			int subchoice = In.nextInt();
@@ -45,9 +45,15 @@ public static void main(String[] args) {
 			break;
 		case 2:
 			System.out.print("Enter ID :");
-			int id = In.nextInt();
+			int id =0;
+			try {
+			id = In.nextInt();
+			}
+			catch(Exception e) {
+				System.out.println("Enter error!!!");
+			}
 			Book book = books.searchByID(id);
-			
+
 			if(book == null) {
 				System.out.println("Không tìm thấy !");
 			}
@@ -58,20 +64,21 @@ public static void main(String[] args) {
 		case 3:
 			books.displayBook();
 			break;
-			
+
 		case 4:
-			System.out.println("Tổng giá sách: "+ books.totalPrice());
+			System.out.println("Tổng giá sách : "+ books.totalPrice());
 			break;
 		case 5:
-			System.out.println("Tổng kích thước ebook: "+ books.getTotalFileSize());
+			System.out.println("Tổng kích thước ebook : "+ books.getTotalFileSize() + " MB");
 			break;
 		default:
 			ok = false;
+
+
+
+			}
 		}
-		
-		
-		}
-	
+
 	}
 }
 

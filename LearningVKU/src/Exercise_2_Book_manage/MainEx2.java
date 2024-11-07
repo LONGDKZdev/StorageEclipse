@@ -7,7 +7,7 @@
 //		BookManagement books = new BookManagement();
 //
 //		boolean ok = true;
-//		
+//
 //	while(ok) {
 //		System.out.println("==============MENU=============");
 //		System.out.println("1. Nhập danh sách các cuốn sách");
@@ -15,10 +15,10 @@
 //		System.out.println("3. Nhập danh sách các cuốn sách");
 //		System.out.println("4. Nhập danh sách các cuốn sách");
 //		System.out.println("===============================");
-//		
+//
 //		System.out.println("Nhập lựa chọn của bạn: ");
 //		int choice = In.nextInt();
-//		
+//
 //		switch(choice) {
 //		case 1:
 //			books.inputs();
@@ -50,7 +50,7 @@ public class MainEx2 {
         Scanner In = new Scanner(System.in);
         BookManagement books = new BookManagement();
         boolean ok = true;
-        
+
         while(ok) {
             System.out.println("==============MENU=============");
             System.out.println("1. Nhập danh sách các cuốn sách (Input book list)");
@@ -58,21 +58,21 @@ public class MainEx2 {
             System.out.println("3. Tìm kiếm sách theo ID (Search book by ID)");
             System.out.println("4. Thoát (Exit)");
             System.out.println("===============================");
-            
+
             System.out.print("Nhập lựa chọn của bạn: ");
             int choice = In.nextInt();
-            
+
             switch(choice) {
                 case 1:
-                    books.inputs(); 
+                    books.inputs();
                     break;
                 case 2:
-                    books.outputs(); 
+                    books.outputs();
                     break;
                 case 3:
                     System.out.print("Nhập vào ID sách muốn tìm kiếm: ");
                     int ID = In.nextInt();
-                    Book book = books.searchByID(ID); 
+                    Book book = books.searchByID(ID);
                     if (book != null) {
                         System.out.println(book.toString());
                     } else {

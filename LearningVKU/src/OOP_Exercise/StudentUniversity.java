@@ -1,19 +1,19 @@
 package OOP_Exercise;
-import java.util.*;
+import java.util.Scanner;
 public class StudentUniversity {
-	
+
 public class student{
 
 	 protected int ID;
 	 protected String Name;
 	 public int Age;
-	 
+
 	 public student(int ID, String Name, int Age) {
-         this.ID = ID;// thêm this để phân biệt thuộc tính hay giá trị 
+         this.ID = ID;// thêm this để phân biệt thuộc tính hay giá trị
          this.Name = Name;
          this.Age = Age;
      }
-	
+
 	protected void output(){
 		System.out.println(" Studen ID : "+ ID);
 		System.out.println(" Name : " + Name );
@@ -49,14 +49,14 @@ public class student{
 		public void setAge(int age) {
 			Age = age;
 		}
-		
-		
-		
+
+
+
 }
-	
+
 	public static void main(String[] args) {
 	Scanner In =new Scanner(System.in);
-	
+
 	System.out.println("Enter Student ID: ");
     int ID = In.nextInt();
     System.out.println("Enter Student Name: ");
@@ -66,8 +66,8 @@ public class student{
     StudentUniversity university = new StudentUniversity();
     student a = university.new student(ID, Name, Age);
 		a.output();
-	
-	
+
+
 		In.close();
 		}
 }

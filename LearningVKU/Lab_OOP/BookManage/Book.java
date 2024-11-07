@@ -5,7 +5,7 @@ public abstract class Book {
 	protected String author;
 	protected long price;
 	public Book() {
-		
+
 	}
 	public Book(int id, String title, String author, long price) {
 		super();
@@ -38,15 +38,16 @@ public abstract class Book {
 	public void setPrice(long price) {
 		this.price = price;
 	}
+	@Override
 	public abstract String toString();
 	public abstract void input();//chỉ định nghĩa mà không thực thi
-	
-	
+
+
 //		return "ID :" + id
 //				+"\nTitle :" + title
 //				+"\nAuthor :" + author
 //				+"\nPrice :" + price;
-	
+
 //		Scanner In = new Scanner(System.in);
 //		System.out.print("Enter ID : ");
 //		id = In.nextInt();

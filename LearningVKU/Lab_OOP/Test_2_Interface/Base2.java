@@ -13,7 +13,7 @@ class Base2{
 	{
 	    TestClass t = new TestClass();
 	    t.display();
-	    System.out.println(t.a);
+	    System.out.println(In1.a);
 	}
 }
 

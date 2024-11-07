@@ -4,7 +4,7 @@ public class Exercise14_HappyNumberWithValueOut1 {
 
 	public static void main(String[] args) {
 		Scanner In = new Scanner(System.in);
-		
+
 		//  int ValueIn = In.nextInt();
 
 	In.close();

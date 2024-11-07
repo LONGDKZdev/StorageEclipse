@@ -1,9 +1,9 @@
 package TEST01;
-import java.util.*;
+import java.util.Scanner;
 public class TEST2 {
-	
+
 		public static void checkScore(int a) {
-			
+
 			//"You must enter score < 10 or score > 0"
 			if(a< 0 || a > 10 ) {
 				throw new IllegalArgumentException();
@@ -17,7 +17,7 @@ public class TEST2 {
 			System.out.print("Enter n: ");
 			int n = In.nextInt();
 			checkScore(n);
-			
+
 		}
 	}
-	
+

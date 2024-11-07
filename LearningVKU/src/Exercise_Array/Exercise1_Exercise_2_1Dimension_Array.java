@@ -66,8 +66,8 @@ public class Exercise1_Exercise_2_1Dimension_Array {
 		System.out.println("---------------------------------------");
 	}
 }
-// Cú pháp 
+// Cú pháp
 // int [] a;
 // a = new int[5];
-// hoặc 
+// hoặc
 //int [] a = new int[5]

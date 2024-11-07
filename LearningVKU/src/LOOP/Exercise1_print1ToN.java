@@ -9,7 +9,7 @@ public class Exercise1_print1ToN {
 		System.out.println("");
 		if(valueIn < 1 ) {
 			while (valueIn < 1) {
-				
+
 				System.out.println(" Error! Enter again! ");
 				valueIn = In.nextInt();
 				}

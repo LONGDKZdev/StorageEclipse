@@ -17,6 +17,6 @@ public class Exercise6_Fibonacci {
 			F0 = F1;
 			F1 = F2;
 		}
-		
+
 	}
 }
