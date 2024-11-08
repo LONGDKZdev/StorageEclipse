@@ -6,7 +6,7 @@ import Model.CounterModel;
 public class CounterView extends JFrame{
 	private CounterModel counterModel;
 	private JButtom jbuttom_up;
-	private JButtom jbuttom_down;
+	private JButtom jbuttom_down ;
 	
 	
 	public CounterView() {
