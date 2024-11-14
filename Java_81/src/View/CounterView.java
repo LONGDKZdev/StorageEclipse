@@ -20,7 +20,7 @@ public class CounterView extends JFrame{
 		this.setSize(300, 300);
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);	
-		
+	
 
 	}
 	
