@@ -14,7 +14,7 @@ public class CounterView extends JFrame{
 		this.init();//tự tạo hàm khởi tạo
 		this.setVisible(true);
 	}
-	
+		
 	public void init() {
 		this.setTitle("Counter");
 		this.setSize(300, 300);
