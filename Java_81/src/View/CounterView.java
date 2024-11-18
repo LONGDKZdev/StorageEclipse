@@ -19,7 +19,8 @@ public class CounterView extends JFrame{
 		this.setTitle("Counter");
 		this.setSize(300, 300);
 		this.setLocationRelativeTo(null);
-		this.setDefaultCloseOperation(EXIT_ON_CLOSE);	
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 	
 
