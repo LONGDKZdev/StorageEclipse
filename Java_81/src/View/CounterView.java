@@ -21,6 +21,7 @@ public class CounterView extends JFrame{
 		this.setLocationRelativeTo(null);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
+		
 	}
 	
 
