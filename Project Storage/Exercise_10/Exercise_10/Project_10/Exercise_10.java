@@ -24,23 +24,29 @@ public class Exercise_10 extends JFrame {
         setTitle("Prime Checker");
         setBounds(100, 100, 400, 200);
         contentPane = new JPanel();
+        contentPane.setBackground(SystemColor.desktop);
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
         JLabel lblNumber = new JLabel("Enter Number:");
+        lblNumber.setFont(new Font("Times New Roman", Font.BOLD, 12));
         lblNumber.setBounds(30, 30, 100, 25);
         contentPane.add(lblNumber);
 
         JTextField txtNumber = new JTextField();
+        txtNumber.setFont(new Font("Times New Roman", Font.BOLD, 12));
         txtNumber.setBounds(140, 30, 200, 25);
         contentPane.add(txtNumber);
 
         JButton btnCheck = new JButton("Check");
+        btnCheck.setBackground(new Color(128, 255, 128));
+        btnCheck.setFont(new Font("Times New Roman", Font.BOLD, 12));
         btnCheck.setBounds(150, 80, 100, 30);
         contentPane.add(btnCheck);
 
         JLabel lblResult = new JLabel("Result:");
+        lblResult.setFont(new Font("Times New Roman", Font.BOLD, 12));
         lblResult.setBounds(30, 130, 50, 25);
         contentPane.add(lblResult);
 

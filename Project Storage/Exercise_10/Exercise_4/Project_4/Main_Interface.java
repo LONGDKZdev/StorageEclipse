@@ -39,6 +39,7 @@ public class Main_Interface extends JFrame {
 	 */
 	public Main_Interface() {
 //		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Main_Interface");
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(128, 128, 0));

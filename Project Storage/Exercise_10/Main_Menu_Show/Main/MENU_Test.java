@@ -104,7 +104,8 @@ public class MENU_Test extends JFrame {
 		
 		EX2.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent e) {
-		        Tester.main(MENU_Test.this); 
+		    	Exercise_2 exercise2Frame = new Exercise_2();
+		        exercise2Frame.setVisible(true);
 		    }
 		});
 		

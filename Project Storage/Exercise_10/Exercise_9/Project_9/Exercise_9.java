@@ -29,26 +29,31 @@ public class Exercise_9 extends JFrame {
         contentPane.setLayout(null);
 
         JLabel lblHeight = new JLabel("Height (m):");
-        lblHeight.setBounds(30, 30, 80, 25);
+        lblHeight.setFont(new Font("Verdana Pro", Font.BOLD, 14));
+        lblHeight.setBounds(10, 30, 120, 25);
         contentPane.add(lblHeight);
 
         JTextField txtHeight = new JTextField();
-        txtHeight.setBounds(120, 30, 200, 25);
+        txtHeight.setBounds(140, 30, 200, 25);
         contentPane.add(txtHeight);
 
         JLabel lblWeight = new JLabel("Weight (kg):");
-        lblWeight.setBounds(30, 70, 80, 25);
+        lblWeight.setFont(new Font("Verdana Pro", Font.BOLD, 14));
+        lblWeight.setBounds(10, 70, 120, 25);
         contentPane.add(lblWeight);
 
         JTextField txtWeight = new JTextField();
-        txtWeight.setBounds(120, 70, 200, 25);
+        txtWeight.setBounds(140, 70, 200, 25);
         contentPane.add(txtWeight);
 
         JButton btnCalculate = new JButton("Calculate");
+        btnCalculate.setBackground(Color.ORANGE);
+        btnCalculate.setFont(new Font("Verdana Pro", Font.PLAIN, 14));
         btnCalculate.setBounds(150, 110, 100, 30);
         contentPane.add(btnCalculate);
 
         JLabel lblResult = new JLabel("BMI:");
+        lblResult.setFont(new Font("Verdana Pro", Font.BOLD, 14));
         lblResult.setBounds(30, 160, 50, 25);
         contentPane.add(lblResult);
 

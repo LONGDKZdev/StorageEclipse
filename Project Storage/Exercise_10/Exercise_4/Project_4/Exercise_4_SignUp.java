@@ -44,6 +44,7 @@ public class Exercise_4_SignUp extends JFrame {
 	 * Create the frame.
 	 */
 	public Exercise_4_SignUp() {
+		setTitle("Sign up");
 //		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();

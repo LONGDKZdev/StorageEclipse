@@ -13,8 +13,6 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.ImageIcon;
 import java.awt.Font;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
@@ -53,28 +51,12 @@ public class Login extends JFrame {
 	 */
 	public Login() {
 		setFont(new Font("Times New Roman", Font.BOLD, 15));
-		setTitle("Login Admin");
+		setTitle("Login Menu");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/Login_menu/Log icon.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		setSize( 550, 391);
-//		setLocationRelativeTo(null);
-//		setResizable(false);
-		
-		
-		// Thiết lập chế độ toàn màn hình
-	    GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-	    GraphicsDevice gd = ge.getDefaultScreenDevice();
-	    if (gd.isFullScreenSupported()) {
-	        setUndecorated(true); // Loại bỏ các viền cửa sổ
-	        setResizable(false);   // Không cho phép thay đổi kích thước cửa sổ
-	        gd.setFullScreenWindow(this); // Đặt cửa sổ vào chế độ toàn màn hình
-	    } else {
-	        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Nếu không hỗ trợ chế độ toàn màn hình, thiết lập đóng cửa sổ thông thường
-	        setSize(550, 391); // Kích thước mặc định nếu không hỗ trợ toàn màn hình
-	        setLocationRelativeTo(null); // Đặt cửa sổ ở trung tâm màn hình
-	    }
-		
-		
+		setSize( 558, 391);
+		setLocationRelativeTo(null);
+		setResizable(false);
 		
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -82,7 +64,7 @@ public class Login extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel JL_Login = new JLabel("LOGIN ADMIN");
+		JLabel JL_Login = new JLabel("LOGIN MENU ");
 		JL_Login.setForeground(new Color(0, 128, 255));
 		JL_Login.setFont(new Font("Sylfaen", Font.BOLD, 30));
 		JL_Login.setHorizontalAlignment(SwingConstants.CENTER);
