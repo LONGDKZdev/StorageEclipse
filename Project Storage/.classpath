@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="JavaSwing/src"/>
+	<classpathentry kind="src" path="LearningVKU/src"/>
+	<classpathentry kind="src" path="LearningVKU/Exception(ErrorCheck)"/>
+	<classpathentry kind="src" path="TestProgram/src"/>
+	<classpathentry kind="src" path="LearningVKU/Lab_OOP"/>
+	<classpathentry kind="src" path="New folder/src"/>
+	<classpathentry kind="src" path="TITV_JavaSwing"/>
+	<classpathentry kind="src" path="TEST"/>
+	<classpathentry kind="src" path="Exercise_10"/>
+	<classpathentry kind="src" path="Exercise_1"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/sqljdbc_12.8/enu/jars/mssql-jdbc-12.8.1.jre11.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="TestConnection_!!!!!!!!!!!!!!!!!!!!!!/Connection/TestConnection.java"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files/sqljdbc_12.8/enu/jars/ojdbc17.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="TestConnection_!!!!!!!!!!!!!!!!!!!!!!">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="outPut"/>
+</classpath>

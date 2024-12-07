@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Exercise_1"/>
+	<classpathentry kind="src" path="Exercise_2"/>
+	<classpathentry kind="src" path="Exercise_3"/>
+	<classpathentry kind="src" path="Exercise_4"/>
+	<classpathentry kind="src" path="Exercise_5"/>
+	<classpathentry kind="src" path="Main_Menu_Show"/>
+	<classpathentry kind="src" path="Exercise_6"/>
+	<classpathentry kind="src" path="Exercise_7"/>
+	<classpathentry kind="src" path="Exercise_8"/>
+	<classpathentry kind="src" path="Exercise_9"/>
+	<classpathentry kind="src" path="Exercise_10"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
