@@ -43,7 +43,6 @@ public class Main extends JFrame {
 	    add(sidebar);
 	}
 
-
 	
 	public class Sidebar extends JPanel {
 		private static final long serialVersionUID = 1L;
