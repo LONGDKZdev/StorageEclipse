@@ -12,20 +12,19 @@ public class Body_Cinema_SELL extends JPanel implements Method_For_Button {
     private JCheckBox chkAdultTicket, chkChildTicket, chkPopcorn, chkDrink;
     private JSpinner spnAdultTicket, spnChildTicket, spnPopcorn, spnDrink;
 
-//  dùng implement kế thừ Method_For_Button(trung gian)
-	//    để lấy các phương thức chính từ CinemaMethod
-	@Override
-	public void calculateTotal(ActionEvent e) {}
-	@Override
-	public void resetFields() {}
-	@Override
-	public void saveReceipt(ActionEvent e) {}
-	//                                             //
-    
-    
+    @Override
+    public void calculateTotal(ActionEvent e) {}
+
+    @Override
+    public void resetFields() {}
+
+    @Override
+    public void saveReceipt(ActionEvent e) {}
+
     public Body_Cinema_SELL() {
         setLayout(new BorderLayout());
 
+        // Panel chứa hóa đơn và tổng tiền
         JPanel receiptPanel = new JPanel();
         receiptPanel.setPreferredSize(new Dimension(450, 600));
         receiptPanel.setBorder(new LineBorder(Color.BLACK));
@@ -53,99 +52,53 @@ public class Body_Cinema_SELL extends JPanel implements Method_For_Button {
 
         add(receiptPanel, BorderLayout.WEST);
 
-        JPanel productPanel = new JPanel();
-        productPanel.setLayout(new GridLayout(2, 2, 10, 10));
-        add(productPanel, BorderLayout.CENTER);
+        // Panel chứa các sản phẩm
+        JPanel productContainer = new JPanel();
+        productContainer.setLayout(new BoxLayout(productContainer, BoxLayout.Y_AXIS));
+        productContainer.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        addProduct(productPanel, "adult ticket (Vé người lớn)", "100,000 VND", true, 10);
-        addProduct(productPanel, "child ticket (Vé trẻ em)", "65,000 VND", true, 10);
-        addProduct(productPanel, "Popcorn (Bắp rang)", "40,000 VND", true, 10);
-        addProduct(productPanel, "drink (Nước uống)", "25,000 VND", true, 10);
+        // Thêm các sản phẩm vào container
+        addProduct(productContainer, "adult ticket (Vé người lớn)", "100,000 VND", true, 10);
+        addProduct(productContainer, "child ticket (Vé trẻ em)", "65,000 VND", true, 10);
+        addProduct(productContainer, "Popcorn (Bắp rang)", "40,000 VND", true, 10);
+        addProduct(productContainer, "drink (Nước uống)", "25,000 VND", true, 10);
 
-        
-        JButton btnCalculate = new JButton("Calculate");
-        btnCalculate.setFont(new Font("Times New Roman", Font.BOLD, 30));
-        btnCalculate.setBounds(100, 500, 300, 64);
-        btnCalculate.setBackground(Color.GREEN);
-        btnCalculate.setFocusPainted(false);
-        btnCalculate.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        // Thêm container vào JScrollPane
+        JScrollPane productScrollPane = new JScrollPane(productContainer);
+        productScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        productScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        add(productScrollPane, BorderLayout.CENTER);
 
-        // Thêm hiệu ứng khi đưa chuột tới
-        btnCalculate.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                btnCalculate.setBackground(Color.LIGHT_GRAY); // Đổi màu khi chuột vào
-            }
+        // Thêm các nút chức năng
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 10));
 
-            @Override
-            public void mouseExited(MouseEvent e) {
-                btnCalculate.setBackground(Color.GREEN); // Đổi lại màu khi chuột ra
-            }
-
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                CinemaMethods.calculateTotal(receiptArea, totalField, chkAdultTicket, spnAdultTicket,
-                        chkChildTicket, spnChildTicket, chkPopcorn, spnPopcorn, chkDrink, spnDrink);
-            }
+        JButton btnCalculate = createButton("Calculate", Color.GREEN, e -> {
+            CinemaMethods.calculateTotal(receiptArea, totalField, chkAdultTicket, spnAdultTicket,
+                    chkChildTicket, spnChildTicket, chkPopcorn, spnPopcorn, chkDrink, spnDrink);
         });
 
-        JButton btnReset = new JButton("RESET");
-        btnReset.setFont(new Font("Times New Roman", Font.PLAIN, 14));
-        btnReset.setBounds(100, 575, 145, 85);
-        btnReset.setBackground(Color.YELLOW);
-        btnReset.setFocusPainted(false);
-        btnReset.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        btnReset.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                btnReset.setBackground(Color.LIGHT_GRAY); // Đổi màu khi chuột vào
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-                btnReset.setBackground(Color.YELLOW); // Đổi lại màu khi chuột ra
-            }
-
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                CinemaMethods.resetFields(receiptArea, totalField, chkAdultTicket, chkChildTicket,
-                        chkPopcorn, chkDrink, spnAdultTicket, spnChildTicket, spnPopcorn, spnDrink);
-            }
+        JButton btnReset = createButton("RESET", Color.YELLOW, e -> {
+            CinemaMethods.resetFields(receiptArea, totalField, chkAdultTicket, chkChildTicket,
+                    chkPopcorn, chkDrink, spnAdultTicket, spnChildTicket, spnPopcorn, spnDrink);
         });
 
-        JButton btnSave = new JButton("PRINT RECEIPT");
-        btnSave.setFont(new Font("Times New Roman", Font.PLAIN, 14));
-        btnSave.setBounds(255, 575, 145, 85);
-        btnSave.setBackground(Color.CYAN);
-        btnSave.setFocusPainted(false);
-        btnSave.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        btnSave.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                btnSave.setBackground(Color.LIGHT_GRAY); // Đổi màu khi chuột vào
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-                btnSave.setBackground(Color.CYAN); // Đổi lại màu khi chuột ra
-            }
-
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                CinemaMethods.saveReceipt(receiptArea, Body_Cinema_SELL.this);
-            }
+        JButton btnSave = createButton("PRINT RECEIPT", Color.CYAN, e -> {
+            CinemaMethods.saveReceipt(receiptArea, Body_Cinema_SELL.this);
         });
 
-        receiptPanel.add(btnCalculate);
-        receiptPanel.add(btnReset);
-        receiptPanel.add(btnSave);
+        buttonPanel.add(btnCalculate);
+        buttonPanel.add(btnReset);
+        buttonPanel.add(btnSave);
+
+        add(buttonPanel, BorderLayout.SOUTH);
     }
 
     private void addProduct(JPanel panel, String name, String price, boolean isSelectable, int maxQty) {
         JPanel product = new JPanel();
         product.setLayout(null);
         product.setBorder(new LineBorder(Color.GRAY));
-        panel.add(product);
+        product.setPreferredSize(new Dimension(400, 100));
 
         JLabel lblName = new JLabel(name);
         lblName.setBounds(10, 10, 200, 20);
@@ -176,7 +129,17 @@ public class Body_Cinema_SELL extends JPanel implements Method_For_Button {
             chkDrink = checkBox;
             spnDrink = spinner;
         }
+
+        panel.add(product);
+    }
+
+    private JButton createButton(String text, Color color, ActionListener actionListener) {
+        JButton button = new JButton(text);
+        button.setFont(new Font("Times New Roman", Font.BOLD, 20));
+        button.setBackground(color);
+        button.setFocusPainted(false);
+        button.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        button.addActionListener(actionListener);
+        return button;
     }
 }
-
-
