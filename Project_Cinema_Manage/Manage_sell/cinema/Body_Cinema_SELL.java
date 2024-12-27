@@ -143,4 +143,4 @@ public class Body_Cinema_SELL extends JPanel implements Method_For_Button {
         return button;
     }
 }
-
+// Dự án quản lý rạp phim
