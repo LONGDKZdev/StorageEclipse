@@ -1,17 +1,23 @@
 package Table_qlsinhvien;
 
 	import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import ConnectSQL.JDBCUtil;
 
 	public class SinhVienCRUD {
 
+		
+		
+		
+		
 	    // Thêm sinh viên mới vào bảng
-	    public static void addSinhVien(Connection connection, String maSinhVien, String name, int age, String className) {
-	        String query = "INSERT INTO sinhvien (ma_sinh_vien, name, age, class) VALUES (?, ?, ?, ?)";
+	    public static void addSinhVien(Connection connection, String Student_ID, String name, int age, String className) {
+	        String query = "INSERT INTO sinhvien (Student_ID, name, age, class) VALUES (?, ?, ?, ?)";
 	        
 	        try (PreparedStatement stmt = connection.prepareStatement(query)) {
-	            stmt.setString(1, maSinhVien);
+	            stmt.setString(1, Student_ID);
 	            stmt.setString(2, name);
 	            stmt.setInt(3, age);
 	            stmt.setString(4, className);
@@ -23,30 +29,37 @@ import ConnectSQL.JDBCUtil;
 	    }
 
 	    // Xem tất cả sinh viên
-	    public static void viewSinhVien(Connection connection) {
+	    
+	    public static List<SinhVien> viewSinhVien(Connection connection) {
+	        List<SinhVien> sinhVienList = new ArrayList<>();
 	        String query = "SELECT * FROM sinhvien";
-	        
+
 	        try (Statement stmt = connection.createStatement(); ResultSet rs = stmt.executeQuery(query)) {
 	            while (rs.next()) {
-	                System.out.println("Mã sinh viên: " + rs.getString("ma_sinh_vien") +
-	                                   ", Tên: " + rs.getString("name") +
-	                                   ", Tuổi: " + rs.getInt("age") +
-	                                   ", Lớp: " + rs.getString("class"));
+	                String studentID = rs.getString("Student_ID");
+	                String name = rs.getString("name");
+	                int age = rs.getInt("age");
+	                String className = rs.getString("class");
+
+	                SinhVien sv = new SinhVien(studentID, name, age, className);
+	                sinhVienList.add(sv);
 	            }
 	        } catch (SQLException e) {
 	            e.printStackTrace();
 	        }
+
+	        return sinhVienList;
 	    }
 
 	    // Sửa thông tin sinh viên
-	    public static void updateSinhVien(Connection connection, String maSinhVien, String name, int age, String className) {
-	        String query = "UPDATE sinhvien SET name = ?, age = ?, class = ? WHERE ma_sinh_vien = ?";
+	    public static void updateSinhVien(Connection connection, String Student_ID, String name, int age, String className) {
+	        String query = "UPDATE sinhvien SET name = ?, age = ?, class = ? WHERE Student_ID = ?";
 	        
 	        try (PreparedStatement stmt = connection.prepareStatement(query)) {
 	            stmt.setString(1, name);
 	            stmt.setInt(2, age);
 	            stmt.setString(3, className);
-	            stmt.setString(4, maSinhVien);
+	            stmt.setString(4, Student_ID);
 	            stmt.executeUpdate();
 	            System.out.println("Cập nhật thông tin sinh viên thành công!");
 	        } catch (SQLException e) {
@@ -57,17 +70,18 @@ import ConnectSQL.JDBCUtil;
 	    // Xóa sinh viên theo mã sinh viên
 	    
 	    
-	    public static void deleteSinhVien(Connection connection, String maSinhVien) {
-	        String query = "DELETE FROM sinhvien WHERE ma_sinh_vien = ?";
-	        
-	        try (PreparedStatement stmt = connection.prepareStatement(query)) {
-	            stmt.setString(1, maSinhVien);
-	            stmt.executeUpdate();
-	            System.out.println("Xóa sinh viên thành công!");
+	    public static boolean deleteSinhVien(Connection connection, String studentID) {
+	        String sql = "DELETE FROM sinhvien WHERE Student_ID = ?";
+	        try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
+	            pstmt.setString(1, studentID);
+	            int rowsAffected = pstmt.executeUpdate();
+	            return rowsAffected > 0;
 	        } catch (SQLException e) {
 	            e.printStackTrace();
+	            return false;
 	        }
 	    }
+
 	
 		
 	    // Hàm main để kiểm tra CRUD

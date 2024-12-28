@@ -45,7 +45,7 @@ public class ConnectMySQL {
         // Kết nối và gọi bảng từ cơ sở dữ liệu information_student
         try (Connection connInfoStudent = DriverManager.getConnection(InfoStudent_URL, USER_NAME, PASSWORD)) {
 
-            String sql_2 = "SELECT * FROM information_student";
+            String sql_2 = "SELECT * FROM qlsinhvien";
             try (PreparedStatement pr2 = connInfoStudent.prepareStatement(sql_2);
                  ResultSet rs2 = pr2.executeQuery()) {
 

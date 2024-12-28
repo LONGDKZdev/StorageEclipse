@@ -21,7 +21,7 @@ public class SignUp_User extends JFrame {
 
     public SignUp_User() {
     	setIconImage(Toolkit.getDefaultToolkit().getImage(SignUp_User.class.getResource("/User/iku6x4hk.png")));
-    	getContentPane().setBackground(Color.DARK_GRAY);
+    	getContentPane().setBackground(new Color(0, 204, 255));
         setTitle("Sign Up");
         setSize(800, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

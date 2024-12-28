@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import Main.MENU;
+//import Main.MENU;
 import Main.MENU_Test;
 
 import javax.swing.JLabel;
@@ -115,7 +115,7 @@ public class Login extends JFrame {
 
                     MENU_Test menuInterface = new MENU_Test();
                     menuInterface.setVisible(true);
-//                    dispose();             
+                    dispose();             
                     
                 } else {
                     messageLabel.setText("Invalid username or password.");
@@ -133,12 +133,6 @@ public class Login extends JFrame {
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(373, 72, 125, 172);
 		contentPane.add(lblNewLabel);
-		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setIcon(new ImageIcon(Login.class.getResource("/Login_menu/Login user .png")));
-		lblNewLabel_1.setBounds(67, 196, 93, 91);
-		contentPane.add(lblNewLabel_1);
 		
 		
 		
