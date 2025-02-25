@@ -30,4 +30,14 @@ public class DatabaseHelper {
 
         return movieInfo.toString();
     }
+
+	public static Connection getConnection() {
+
+		Connection connection = SQLServerConnection.getConnection();
+        if (connection == null) {
+            System.err.println("❌ Lỗi: Không thể kết nối đến SQL Server từ DatabaseHelper!");
+        }
+        return connection;
+    }
+
 }

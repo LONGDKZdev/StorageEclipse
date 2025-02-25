@@ -1,4 +1,4 @@
-package ConnectSQL;
+package ConnectSQL_fist;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -47,5 +47,7 @@ public class JDBCUtil {
 
 
 	}
+   
+   
 }
 

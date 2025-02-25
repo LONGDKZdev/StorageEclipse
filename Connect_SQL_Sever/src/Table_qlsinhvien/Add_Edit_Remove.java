@@ -22,7 +22,7 @@ public class Add_Edit_Remove extends JFrame {
     	setIconImage(Toolkit.getDefaultToolkit().getImage(Add_Edit_Remove.class.getResource("/image_Student_manage/Icon Manager.png")));
 
         // Kết nối cơ sở dữ liệu
-        connection = ConnectSQL.JDBCUtil.getConnection();
+        connection = ConnectSQL_fist.JDBCUtil.getConnection();
 
         
         //thiết lập JFrame
