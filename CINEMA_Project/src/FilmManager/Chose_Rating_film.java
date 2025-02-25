@@ -4,6 +4,8 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import view_Use_Account.MainFrame_Employee;
 import connection.DatabaseHelper;
+import connection.SQLServerConnection;
+
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -79,7 +81,7 @@ public class Chose_Rating_film extends JPanel {
     }
 
     private void displayMoviesByRating(String rating, MainFrame_Employee mainFrame) {
-        try (Connection connection = DatabaseHelper.getConnection()) {
+        try (Connection connection = SQLServerConnection.getConnection()) {
             String query = rating.isEmpty() ? "SELECT * FROM Movies" : "SELECT * FROM Movies WHERE Rating = ?";
             PreparedStatement statement = connection.prepareStatement(query);
 
