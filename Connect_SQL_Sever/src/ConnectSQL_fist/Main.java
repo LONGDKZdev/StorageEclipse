@@ -1,4 +1,4 @@
-package ConnectSQL;
+package ConnectSQL_fist;
 import java.sql.Connection;
 
 public class Main {

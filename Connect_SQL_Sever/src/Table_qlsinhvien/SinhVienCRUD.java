@@ -4,7 +4,7 @@ package Table_qlsinhvien;
 import java.util.ArrayList;
 import java.util.List;
 
-import ConnectSQL.JDBCUtil;
+import ConnectSQL_fist.JDBCUtil;
 
 	public class SinhVienCRUD {
 
